@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mohammed Kasim</title>
+    <meta name="description" content="Mohammed Kasim — Cybersecurity Professional & Software Developer. Portfolio showcasing projects in ML Threat Detection, Systems Automation, and Algorithmic Trading.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">MK</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="btn btn-outline">Contact Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-padding">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <p class="greeting">Based in Berlin, Germany</p>
+                    <h1 class="hero-title">
+                        <span class="name">Mohammed Kasim</span>
+                    </h1>
+                    <div class="hero-typing-row">
+                        <span class="hero-typing-label">I am a&nbsp;</span>
+                        <span class="typing-text"></span><span class="cursor"></span>
+                    </div>
+                    <p class="hero-subtitle">Cybersecurity Professional &amp; Software Developer specializing in secure system architecture, ML-driven threat detection, and low-latency algorithmic engineering.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-photo">
+                    <div class="photo-frame"></div>
+                    <div class="photo-glow"></div>
+                    <img src="profile.png?v=2" alt="Mohammed Kasim - Cybersecurity Professional &amp; Software Developer">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <p class="section-subtitle">Who I Am</p>
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="about-content glass-panel reveal" style="margin-top: 3rem;">
+                    <div class="about-text">
+                        <p>Highly analytical and detail-driven Cybersecurity Professional &amp; Software Developer with a Master of Science in Cybersecurity and a solid foundation in Computer Applications. I specialize in the intersection of secure system architecture, advanced automation engineering, and low-latency algorithmic development.</p>
+                        <p>My engineering philosophy centers on building highly optimized, production-ready applications that solve complex real-world challenges—whether that means implementing machine learning models for real-time threat detection, designing high-density data management architectures, or programming high-frequency execution engines. I thrive on translating intricate technical requirements into secure, high-throughput software systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <p class="section-subtitle">Capabilities</p>
+                <h2 class="section-title">Technical <span>Skills</span></h2>
+                <div class="skills-grid">
+                    
+                    <div class="skill-card glass-panel reveal">
+                        <h3>Languages & Core Development</h3>
+                        <p>Python, C++, MQL5, SQL</p>
+                    </div>
+
+                    <div class="skill-card glass-panel reveal">
+                        <h3>Cybersecurity Focus</h3>
+                        <p>Machine Learning for Threat Detection, Network Security, Secure Code Auditing, Applied Cryptography, Incident Response</p>
+                    </div>
+
+                    <div class="skill-card glass-panel reveal">
+                        <h3>Systems & Architecture</h3>
+                        <p>Multithreaded Processing, High-Density UI Design, Database Design & Optimization, Local Network Synchronization</p>
+                    </div>
+
+                    <div class="skill-card glass-panel reveal">
+                        <h3>Tools & Environments</h3>
+                        <p>Git/Version Control, Linux/Unix, MetaTrader 5, REST & Third-Party API Integration</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <p class="section-subtitle">What I've Built</p>
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <div class="projects-grid">
+
+                    <!-- Project Card 1 -->
+                    <div class="project-card reveal" data-project-id="0">
+                        <div class="project-screenshot">
+                            <div class="screenshot-bar"><span></span><span></span><span></span></div>
+                            <div class="screenshot-img">
+                                <img src="screenshots/project1.png" alt="ML Threat Detection Suite Screenshot" onerror="this.parentElement.classList.add('no-img')">
+                                <div class="screenshot-placeholder">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                                    <p>Drop <code>screenshots/project1.png</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Cybersecurity &amp; ML</span>
+                            <h3>Real-Time Machine Learning Threat Detection Suite</h3>
+                            <p><strong>Advanced Security Analytics &amp; Low-Latency Network Monitoring.</strong></p>
+                            <p>Developed an end-to-end network traffic analysis and anomaly detection system leveraging machine learning models to identify and flag potential security breaches in real time.</p>
+                            <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-secondary); font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.5rem;"><strong>Architecture:</strong> Built an optimized Python data ingestion pipeline to sniff, parse, and analyze high-throughput packets with minimal CPU overhead.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Interpretability:</strong> Implemented classification algorithms to detect anomalous patterns, engineered with an interpretability layer for analysts.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Data Integrity:</strong> Designed a secure logging mechanism that prevents local log tampering, ensuring cryptographic integrity.</li>
+                            </ul>
+                            <div class="tech-stack" style="margin-top: 1.5rem; margin-bottom: 1.25rem;">
+                                <span>Python</span><span>Machine Learning</span><span>Network Analysis</span><span>Linux Security Tools</span>
+                            </div>
+                            <a href="#" class="view-details-btn" data-project-id="0">
+                                View Case Study &amp; Future Scope 
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; display: inline-block; vertical-align: middle;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card reveal" data-project-id="1">
+                        <div class="project-screenshot">
+                            <div class="screenshot-bar"><span></span><span></span><span></span></div>
+                            <div class="screenshot-img">
+                                <img src="screenshots/project2.png" alt="PharmacyOS Screenshot" onerror="this.parentElement.classList.add('no-img')">
+                                <div class="screenshot-placeholder">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                                    <p>Drop <code>screenshots/project2.png</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Systems Automation</span>
+                            <h3>PharmacyOS: Enterprise Retail Suite</h3>
+                            <p><strong>Indian Retail Pharmacy Optimization &amp; Regulatory Compliance.</strong></p>
+                            <p>A modern, high-performance desktop application built to optimize speed, regulatory compliance, and profit margins for retail pharmacies in India.</p>
+                            <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-secondary); font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.5rem;"><strong>POS &amp; Substitutions:</strong> Keyboard-friendly checkout grid suggesting alternative in-stock brands across a 248,000+ medicine database.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Procurement &amp; Expiries:</strong> Automated calculation of scheme/cash discounts, invoice landed costs, batch details, and expiry alerts.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Compliance &amp; RBAC:</strong> Built-in Scheduled drug managers (H/X/NRx) with doctor validation triggers, locked behind Admin-Cashier access boundaries.</li>
+                            </ul>
+                            <div class="tech-stack" style="margin-top: 1.5rem; margin-bottom: 1.25rem;">
+                                <span>Python</span><span>CustomTkinter</span><span>SQLite</span><span>POS Billing</span><span>Security Audit</span>
+                            </div>
+                            <a href="#" class="view-details-btn" data-project-id="1">
+                                View Case Study &amp; Future Scope 
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; display: inline-block; vertical-align: middle;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card reveal" data-project-id="2">
+                        <div class="project-screenshot">
+                            <div class="screenshot-bar"><span></span><span></span><span></span></div>
+                            <div class="screenshot-img">
+                                <img src="screenshots/project3.png" alt="Team Gold Rush Screenshot" onerror="this.parentElement.classList.add('no-img')">
+                                <div class="screenshot-placeholder">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                                    <p>Drop <code>screenshots/project3.png</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Algorithmic Trading</span>
+                            <h3>High-Frequency Algorithmic Systems (Team Gold Rush)</h3>
+                            <p><strong>Algorithmic Engineering &amp; Low-Latency Automated Execution.</strong></p>
+                            <p>Under his trading brand <em>Team Gold Rush</em>, he designs, programs, and rigorously backtests low-latency automated trading systems (Expert Advisors) in MQL5 and C++ for highly liquid markets like XAUUSD and Bitcoin, incorporating hardcoded structural risk controls and execution models — developed with AI assistance.</p>
+                            <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-secondary); font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.5rem;"><strong>Execution Logic:</strong> Engineered sophisticated liquidity-sweep and market execution algorithms optimized for rapid order placement on XAUUSD and BTC.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Security:</strong> Hardcoded critical structural risk variables and account parameters, protecting client deployments from operational errors.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Performance:</strong> Optimized execution loops to minimize internal latency and ran continuous, multi-year historical tick-data backtests.</li>
+                            </ul>
+                            <div class="tech-stack" style="margin-top: 1.5rem; margin-bottom: 1.25rem;">
+                                <span>MQL5</span><span>C++</span><span>MetaTrader 5</span><span>Quantitative Analysis</span><span>AI-Assisted</span>
+                            </div>
+                            <a href="#" class="view-details-btn" data-project-id="2">
+                                View Case Study &amp; Future Scope 
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; display: inline-block; vertical-align: middle;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card reveal" data-project-id="3">
+                        <div class="project-screenshot">
+                            <div class="screenshot-bar"><span></span><span></span><span></span></div>
+                            <div class="screenshot-img">
+                                <img src="screenshots/project4.png" alt="YouTuber TTS Screenshot" onerror="this.parentElement.classList.add('no-img')">
+                                <div class="screenshot-placeholder">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                                    <p>Drop <code>screenshots/project4.png</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Media Automation</span>
+                            <h3>YouTuber TTS: Automated Video Creation Suite</h3>
+                            <p><strong>Digital Content &amp; Media Automation Pipeline.</strong></p>
+                            <p>Built a Python-based software suite that automates professional video creation workflows end-to-end — from raw assets to fully synchronized, publish-ready video content.</p>
+                            <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-secondary); font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.5rem;"><strong>Automation Pipeline:</strong> Integrates translation services, text-to-speech engines, and media platform APIs (Shutterstock) to transform assets autonomously.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Media Sync:</strong> Produces fully synchronized video content with accurate audio-visual alignment at professional quality standards.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Scalability:</strong> Designed to process high volumes of content with minimal manual intervention, dramatically reducing production time.</li>
+                            </ul>
+                            <div class="tech-stack" style="margin-top: 1.5rem; margin-bottom: 1.25rem;">
+                                <span>Python</span><span>TTS Engines</span><span>Shutterstock API</span><span>Translation APIs</span>
+                            </div>
+                            <a href="#" class="view-details-btn" data-project-id="3">
+                                View Case Study &amp; Future Scope 
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; display: inline-block; vertical-align: middle;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5 -->
+                    <div class="project-card reveal" data-project-id="4">
+                        <div class="project-screenshot">
+                            <div class="screenshot-bar"><span></span><span></span><span></span></div>
+                            <div class="screenshot-img">
+                                <img src="screenshots/project5.png" alt="Scenic Steps Screenshot" onerror="this.parentElement.classList.add('no-img')">
+                                <div class="screenshot-placeholder">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                                    <p>Drop <code>screenshots/project5.png</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Digital Content</span>
+                            <h3>Scenic Steps — YouTube Channel</h3>
+                            <p><strong>Immersive Slow TV Walking Tours.</strong></p>
+                            <p>Founded and manage a digital content platform dedicated to producing high-quality, immersive "Slow TV" walking tour experiences for a global audience.</p>
+                            <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-secondary); font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.5rem;"><strong>Content Production:</strong> Curates and publishes premium, long-form walking tour videos offering an immersive, real-world travel experience.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Automation Integration:</strong> Leverages the custom TTS automation suite to streamline publishing and localization workflows.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Audience Growth:</strong> Manages channel strategy, SEO, metadata optimization, and audience engagement across the platform.</li>
+                            </ul>
+                            <div class="tech-stack" style="margin-top: 1.5rem; margin-bottom: 1.25rem;">
+                                <span>YouTube</span><span>Video Production</span><span>Content Strategy</span><span>SEO</span>
+                            </div>
+                            <a href="#" class="view-details-btn" data-project-id="4">
+                                View Case Study &amp; Future Scope 
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; display: inline-block; vertical-align: middle;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 6 -->
+                    <div class="project-card reveal" data-project-id="5">
+                        <div class="project-screenshot">
+                            <div class="screenshot-bar"><span></span><span></span><span></span></div>
+                            <div class="screenshot-img">
+                                <img src="screenshots/project6.png" alt="Local AI Companion Screenshot" onerror="this.parentElement.classList.add('no-img')">
+                                <div class="screenshot-placeholder">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                                    <p>Drop <code>screenshots/project6.png</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Local AI / LLM Engineering</span>
+                            <h3>Privacy-First Local AI Desktop Companion</h3>
+                            <p><strong>Offline LLM Inference, Agentic Orchestration &amp; Dual-Tier Memory.</strong></p>
+                            <p>Engineered a fully local, privacy-first desktop AI companion utilizing Meta's Llama architecture (Llama 3 / 3.1) to handle complex system interactions, long-term contextual memory, and task automation without any external cloud dependency.</p>
+                            <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-secondary); font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.5rem;"><strong>Offline Inference:</strong> Deployed a quantized Llama model (GGUF format) via Ollama / llama.cpp with custom 64k+ token context windows and partial GPU layer offloading.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Dual-Tier Memory:</strong> Architected a hybrid memory loop — Short-Term (rolling session buffer) and Long-Term via a local vector database (ChromaDB / VelesDB) with semantic embeddings.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Agentic Tool Calling:</strong> Implemented structured JSON / Jinja function-calling loops enabling OS-level commands, file search, and script triggers.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Multimodal Voice Interface:</strong> Integrated local Whisper STT and TTS engines for a continuous, hands-free voice processing loop.</li>
+                            </ul>
+                            <div class="tech-stack" style="margin-top: 1.5rem; margin-bottom: 1.25rem;">
+                                <span>Python</span><span>Llama 3 (Meta)</span><span>llama.cpp / Ollama</span><span>Vector Databases</span><span>Whisper STT/TTS</span><span>Bash / OS Automation</span>
+                            </div>
+                            <a href="#" class="view-details-btn" data-project-id="5">
+                                View Case Study &amp; Future Scope 
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; display: inline-block; vertical-align: middle;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Education Section -->
+        <section id="education" class="education section-padding">
+            <div class="container">
+                <p class="section-subtitle">Academic Background</p>
+                <h2 class="section-title">Education &amp; <span>Credentials</span></h2>
+                <div class="timeline">
+                    
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Graduated: June 2026</span>
+                            <h3>Master of Science (M.Sc.) in Cybersecurity</h3>
+                            <h4 style="color: var(--text-secondary); margin-bottom: 0.5rem; font-family: var(--font-body); font-weight: 500;">IU International University of Applied Sciences, Germany</h4>
+                            <p><strong>Core Focus:</strong> Advanced Cryptography, Network Security Architecture, Machine Learning Applications in Cyber Defense, Penetration Testing, and Incident Management.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">2022</span>
+                            <h3>Python Full Stack Development</h3>
+                            <h4 style="color: var(--text-secondary); margin-bottom: 0.5rem; font-family: var(--font-body); font-weight: 500;">KSTEDS, Kochi</h4>
+                            <p><strong>Core Focus:</strong> Full-stack web development with Python, covering front-end technologies, back-end frameworks, database integration, and deployment pipelines.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">2021</span>
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <h4 style="color: var(--text-secondary); margin-bottom: 0.5rem; font-family: var(--font-body); font-weight: 500;">Mahatma Gandhi University, Kottayam</h4>
+                            <p><strong>Core Focus:</strong> Object-Oriented Programming (OOP), Data Structures & Algorithms, Database Management Systems (DBMS), and Software Engineering Fundamentals.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="contact-box glass-panel reveal">
+                    <p class="section-subtitle" style="margin-bottom: 1rem;">Let's Connect</p>
+                    <h2>Get In <span style="background: var(--gradient-main); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Touch</span></h2>
+                    <p>I am currently based in Berlin, Germany, and open to full-time opportunities in Cybersecurity Engineering, Software Development, and Systems Automation — Local &amp; Remote.</p>
+                    <div class="contact-location">📍 Berlin, Germany</div>
+                    <a href="mailto:3254134kasim@gmail.com" class="btn btn-primary lg">Say Hello →</a>
+
+                    <div class="social-links">
+                        <a href="https://github.com/KAZiM1067" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohammed-kasim-317539221" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:3254134kasim@gmail.com" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 <span>Mohammed Kasim</span> — Cybersecurity Professional &amp; Software Developer. Berlin, Germany.</p>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="project-modal-overlay">
+        <div class="project-modal-container">
+            <button class="project-modal-close" aria-label="Close modal">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="project-modal-content">
+                <div class="modal-left-col">
+                    <div class="modal-screenshot-frame">
+                        <div class="screenshot-bar"><span></span><span></span><span></span></div>
+                        <div class="modal-screenshot-img">
+                            <img id="modal-img" src="" alt="Project Screenshot">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-right-col">
+                    <div class="project-modal-body">
+                        <span id="modal-tag" class="project-tag"></span>
+                        <h2 id="modal-title"></h2>
+                        <div id="modal-tech-stack" class="tech-stack"></div>
+                        
+                        <div class="modal-section">
+                            <h3>Project Overview</h3>
+                            <p id="modal-description"></p>
+                        </div>
+                        
+                        <div class="modal-section">
+                            <h3>Key Features</h3>
+                            <ul id="modal-features" class="modal-features-list"></ul>
+                        </div>
+                        
+                        <div class="modal-section">
+                            <h3>Future Scope</h3>
+                            <ul id="modal-future-scope" class="modal-future-scope-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
